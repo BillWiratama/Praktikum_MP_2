@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/maincontener"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+    android:id="@+id/btn_continer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_frag1"
+        android:layout_height="match_parent"
+        android:layout_margin="6dp"
+        android:text="Fragment 1"
+        android:layout_width="match_parent" />
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_sharedpreferences"
+        android:text="Shared Preferences"
+        android:layout_margin="6dp" />
+    <Button
+        android:id="@+id/btn_roomdatabase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:text="Room Database" />
+</LinearLayout>
+    <FrameLayout
+        android:id="@+id/Fragment_continer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_continer">
+    </FrameLayout>
+
+
+
+</RelativeLayout>
